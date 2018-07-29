@@ -1,3 +1,191 @@
 .Header {
+  height: 607px;
+  position: relative;
+  background-size: cover;
+  background: linear-gradient(0deg,#00a1c1,#00c4af) center center;
+  &:after {
+    content: '';
+    height: 3.95vw;
+    width: 100%;
+    background: url("https://emailoctopus.com/bundles/emailoctopussales/images/home/wave-1.svg") center center;
+    background-size: cover;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  button {
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    font-weight: 400;
+    background: #81409b;
+    transition: all .5s ease 0s;
+    &:hover {
+      background: #4e0d68;
+    }
+  }
 
+  .navbar-row {
+    padding: 0 15px;
+    a {
+      padding: 15px 0;
+      display: inline-block;
+      p {
+        float: right;
+        line-height: 40px;
+        color: #fff;
+        padding-left: 10px;
+      }
+    }
+    .navbar-collapse {
+      list-style-type: none;
+      float: right;
+      li {
+        padding: 15px 5px;
+        display: inline-block;
+        a {
+          text-decoration: none;
+          padding: 0 10px;
+          line-height: 40px;
+          font-size: 16px;
+          background: 0 0;
+          border: 0;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        button {
+          width: 125px;
+          font-size: 16px;
+          height: 40px;
+          border-radius: 4px;
+        }
+      }
+    }
+
+    .hamburger-wrapper {
+      height: 16px;
+      width: 23px;
+      cursor: pointer;
+      margin-top: 30px;
+      padding-top: 5px;
+      position: relative;
+      margin-right: 15px;
+      float: right;
+      .menu.icon {
+        color: #000;
+        display: none;
+        position: relative;
+        width: 23px;
+        height: 2px;
+        background-color: #fff;
+        &:before {
+          content: '';
+          position: absolute;
+          top: -6px;
+          left: 0;
+          width: 23px;
+          height: 2px;
+          background-color: #fff;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          top: 6px;
+          left: 0;
+          width: 23px;
+          height: 2px;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .header-body {
+    .text-col {
+      width: 50%;
+      float: left;
+      padding: 90px 15px 0 15px;
+      h1 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.3;
+      }
+      button {
+        width: 193px;
+        font-size: 18px;
+        height: 44px;
+        border-radius: 6px;
+      }
+    }
+    .octopus-mail {
+      height: 300px;
+      width: 50%;
+      float: right;
+      margin-top: 40px;
+      background: url("https://emailoctopus.com/bundles/emailoctopussales/images/home/octopus-mail.svg") center center no-repeat;
+    }
+  }
+
+  .shoals {
+    content: '';
+    height: 230px;
+    width: 100%;
+    background: url('https://emailoctopus.com/bundles/emailoctopussales/images/home/shoal.svg') center center no-repeat;
+    position: absolute;
+    z-index: 0;
+    left: -130px;
+    bottom: 65px;
+  }
+
+  .sea-life {
+    background: url('https://emailoctopus.com/bundles/emailoctopussales/images/home/sea-life.svg') center center no-repeat;
+    position: absolute;
+    width: 300px;
+    left: 16.66666667%;
+    bottom: -67px;
+    height: 300px;
+    z-index: 1;
+  }
+
+  .aws-partner {
+    background: url('https://emailoctopus.com/bundles/emailoctopussales/images/home/aws-partner.png') center center no-repeat;
+    background-size: 175px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 200px;
+    bottom: 0;
+  }
+
+  @media (min-width: 992px) {
+    .header-body, .navbar-row {
+      margin-left: 8.3%;
+      width: 83.3%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .header-body, .navbar-row {
+      margin-left: 16.7%;
+      width: 66.7%;
+    }
+  }
+  @media (max-width: 768px) {
+    .octopus-mail, .navbar-collapse, .aws-partner, .sea-life {
+      display: none;
+    }
+    .text-col {
+      text-align: center;
+      width: unset !important;
+      float: unset !important;
+    }
+    .menu.icon {
+      display: block !important;
+    }
+  }
 }

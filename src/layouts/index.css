@@ -4,6 +4,8 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
+  font-family: open sans,helvetica neue ,Helvetica,Arial,Sans-serif;
+  -webkit-font-smoothing: antialiased;
   margin: 0;
 }
 article,
@@ -38,6 +40,8 @@ template {
   display: none;
 }
 a {
+  color: #fff;
+  font-weight: 400;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -197,8 +201,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  color: #fff;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -622,3 +625,4 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
