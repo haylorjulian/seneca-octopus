@@ -2,7 +2,11 @@
 .cache
 node_modules
 yarn-error.log
+.prettierrc
 
 # Build directory
 /public
 .DS_Store
+
+# IDEs and editors
+/.idea
