@@ -1,4 +1,10 @@
-# gatsby-starter-default
+# GatsbyJS Seneca Project
+
+## Get Started
+1. Fork it!
+2. Run ```gatsby develop```
+
+## gatsby-starter-default
 The default Gatsby starter.
 
 For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
